@@ -11,10 +11,10 @@ Frontend application in React that consumes a public API about pokemon - pokeapi
 
 ## Tech stack
 
-- Chakra ui
-- React
 - Typescript
+- React
 - Redux
+- Chakra ui
 
 ## Getting started
 

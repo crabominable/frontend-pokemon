@@ -27,7 +27,7 @@ git clone https://github.com/crabominable/frontend-pokemon
 - Go to repository root:
 
 ```bash
-cd react-descontinued-codeatoms
+cd frontend-pokemon
 ```
 
 - Install the dependencies:

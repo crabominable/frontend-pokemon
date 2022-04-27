@@ -8,24 +8,12 @@
 
 .header-main-container {
   align-items: center;
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: rgba(162, 162, 162, 0.4);
   border-radius: 6px;
   display: flex;
-  height: 8vh;
+  height: 3em;
   justify-content: center;
   width: 100%;
-}
-
-.header-title-container {
-  align-items: center;
-  background-color: rgba(222, 222, 222, 0.8);
-  border-radius: 6px;
-  display: flex;
-  height: 4em;
-  justify-content: center;
-  left: 2em;
-  position: absolute;
-  width: 10em;
 }
 
 .header-title {
@@ -33,22 +21,4 @@
   font-family: 'Nunito';
   font-size: 22px;
   font-weight: bold;
-}
-
-.header-number-option-filter {
-  color: #FFFFFF;
-  font-family: 'Nunito';
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 1em;
-  margin-right: 2em;
-}
-
-.header-letter-option-filter {
-  color: rgba(255, 255, 255, 0.479);
-  font-family: 'Nunito';
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 2em;
-  margin-right: 1em;
 }

@@ -1,12 +1,11 @@
-import { Flex } from "@chakra-ui/react";
+import React from 'react'
+
+import Header from '../../components/Header'
 
 function Pokemon() {
   return (
     <div>
-      {/*<Header />*/}
-      <Flex align="center" justify="center">
-        Pokemon
-      </Flex>
+      <Header />
     </div>
   )
 }

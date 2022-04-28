@@ -3,17 +3,18 @@
 }
 
 .header-main {
-  margin: 0.2em;
+  margin: 0.4em;
 }
 
 .header-main-container {
   align-items: center;
-  background-color: rgba(162, 162, 162, 0.4);
+  background-color: rgba(209, 209, 209, 0.4);
   border-radius: 6px;
   display: flex;
   height: 3em;
   justify-content: center;
-  width: 100%;
+  margin: auto;
+  width: 95%;
 }
 
 .header-title {

@@ -13,6 +13,7 @@ Frontend application in React that consumes a public API about pokemon - pokeapi
 
 - Typescript
 - React
+- React Router
 - Context API
 
 ## Getting started

@@ -13,8 +13,7 @@ Frontend application in React that consumes a public API about pokemon - pokeapi
 
 - Typescript
 - React
-- Redux
-- Chakra ui
+- Context API
 
 ## Getting started
 

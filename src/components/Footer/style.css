@@ -1,0 +1,37 @@
+.footer-main-container {
+  bottom: 0%;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-container {
+  align-items: center;
+  background-color: rgba(232, 232, 232, 0.1);
+  border-radius: 8px;
+  color: rgb(35, 35, 35);
+  display: flex;
+  height: 4em;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 20em;
+  padding-top: 6px;
+  width: 70%;
+}
+
+.footer-go-back-button {
+  align-items: center;
+  display: flex;
+  color: rgb(35, 35, 35);
+  cursor: pointer;
+  flex-flow: column nowrap;
+  font-family: 'Nunito';
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+
+.footer-go-back-button p {
+  margin-top: 6px;
+}

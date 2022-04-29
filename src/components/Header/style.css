@@ -3,22 +3,29 @@
 }
 
 .header-main {
-  margin: 0.4em;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .header-main-container {
   align-items: center;
-  background-color: rgba(209, 209, 209, 0.4);
-  border-radius: 6px;
+  background-color: rgba(232, 232, 232, 0.1);
+  border-radius: 8px;
   display: flex;
+  flex-flow: column nowrap;
   height: 3em;
   justify-content: center;
+  position: fixed;
+  top: 1%;
   margin: auto;
-  width: 95%;
+  width: 70%;
 }
 
 .header-title {
-  color: black;
+  color: rgb(35, 35, 35);
   font-family: 'Nunito';
   font-size: 22px;
   font-weight: bold;

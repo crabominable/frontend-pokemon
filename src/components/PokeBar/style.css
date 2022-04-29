@@ -1,0 +1,24 @@
+.pokebar-main-container {
+  align-items: center;
+  background-color: rgba(232, 232, 232, 0.1);
+  border: 1px solid rgb(255, 161, 84);
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(35, 35, 35, 0.4);
+  color: rgb(35, 35, 35);
+  display: flex;
+  font-family: 'Nunito';
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 1.6em;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 70%;
+}
+
+.pokebar-main-container:hover {
+  background-color: rgb(255, 124, 68);
+  box-shadow: 0px 0px 20px rgba(255, 188, 94, 0.4);
+  cursor: pointer;
+  transition: 0.5s;
+}

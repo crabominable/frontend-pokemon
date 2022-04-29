@@ -1,46 +1,41 @@
-import React, { useEffect } from 'react'
-import { connect, ConnectedProps } from 'react-redux'
+import React, { useContext, useEffect } from 'react'
 
-import { fetchPokemon } from '../../actions'
+import Context from '../../context/AppContext'
 
-import Header from '../../components/Header'
-
-import Pokeball from '../../images/pokeball.png'
+import {
+  Header,
+  PokeBg,
+  PokeBar,
+  Footer } from '../../components'
 
 import './style.css'
 
-interface RootState {
-  pokemonArray: any[]
-  isFetching: boolean
-}
+const Home = () => {
+  const {
+    data,
+    offsetReqNum,
+    fetchApi3 } = useContext(Context)
 
-const mapStateToProps = (state: RootState) => ({
-  pokemonArray: state.pokemonArray,
-  isFetching: state.isFetching
-})
-
-const mapDispatchToProps = (dispatch: any) => ({
-  fetchPokemon: () => dispatch(fetchPokemon())
-})
-
-const connector = connect(mapStateToProps, mapDispatchToProps)
-
-type PropsFromRedux = ConnectedProps<typeof connector>
-
-/* type Props = PropsFromRedux & {
-  backgroundColor: string
-} */
-
-const Home = (props: PropsFromRedux) => {
   useEffect(() => {
-    props.fetchPokemon()
-  }, [])
+    if (offsetReqNum > 1) {
+      fetchApi3(offsetReqNum)
+    }
+  }, [offsetReqNum])
+
   return (
     <div className='home-main-container'>
-      <img className='background-pokeball' src={ Pokeball } />
+      <PokeBg />
       <Header />
+      <div className='home-list-pokemon-container'>
+        {
+          !data ? 'loading' : data.map(
+            (pokemon: any, index: any) => <PokeBar data={ pokemon } key={ index } />
+          )
+        }
+      </div>
+      <Footer />
     </div>
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home

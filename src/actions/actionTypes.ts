@@ -1,3 +1,0 @@
-export const GET_POKEMON = 'GET_POKEMON';
-export const REQUEST_POKEMON = 'REQUEST_POKEMON';
-export const FAILED_REQUEST = 'FAILED_REQUEST';

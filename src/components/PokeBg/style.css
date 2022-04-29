@@ -1,0 +1,30 @@
+.background-pokeball {
+  top: 10%;
+  height: 40em;
+  left: 10%;
+  position: absolute;
+  transform: rotate(-20deg);
+  width: 40em;
+}
+
+@media only screen and (max-width: 830px) {
+  .background-pokeball {
+    top: 10%;
+    height: 15em;
+    left: 10%;
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 15em;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .background-pokeball {
+    top: 10%;
+    height: 15em;
+    left: 10%;
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 15em;
+  }
+}
